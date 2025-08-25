@@ -36,10 +36,10 @@ export default function App() {
           {bioData.contacts.map((contact, index) => {
             return (
               <div className="flex" key={index}>
-                <div className="mr-8 w-full max-w-[100px] text-slate-600 dark:text-slate-400">
+                <div className="mr-8 w-full max-w-[100px] dark:text-white/50">
                   {contact.label}
                 </div>
-                <div className="flex flex-1 flex-col text-slate-900 dark:text-slate-100">
+                <div className="flex flex-1 flex-col text-slate-700 dark:text-slate-100">
                   <a
                     href={contact.href}
                     target="_blank"

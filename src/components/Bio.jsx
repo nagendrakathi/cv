@@ -3,7 +3,7 @@ export default function Bio({ bio }) {
   return (
     <section className="flex items-center">
       <img
-        src={bio.avatar}
+        src={bio.avatar?bio.avatar:'/image.png'}
         alt="Author"
         width={80}
         height={80}

@@ -1,6 +1,6 @@
 export const bioData = {
   name: "Nagendra Kathi",
-  avatar: "https://github.com/andreypopp.png",
+  avatar: "",
   jobTitle: "Full Stack Developer",
   website: "",
   email:"nagendrakathi7@gmail.com",

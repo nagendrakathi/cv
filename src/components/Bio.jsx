@@ -1,12 +1,13 @@
+const URL=import.meta.env.VITE_IMAGE_URL;
 import ModeToggle from "./ModeToggle";
 export default function Bio({ bio }) {
   return (
     <section className="flex items-center">
       <img
-        src={bio.avatar?bio.avatar:'/image.png'}
+        src={bio.avatar?bio.avatar:URL}
         alt="Author"
-        width={80}
-        height={80}
+        width={100}
+        height={100}
         className="rounded-full object-cover"
       />
       <div className="ml-4 flex-1">

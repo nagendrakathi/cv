@@ -1,7 +1,7 @@
 export default function Profile({ title, items }) {
   return (
     <section className="my-14 text-sm">
-      <h3 className="mb-6 dark:text-white">{title}</h3>
+      <h3 className="mb-6 text-[1rem] dark:text-white">{title}</h3>
       <div className="flex flex-col gap-6">
         {items.map((item, index) => {
           return (

@@ -31,12 +31,12 @@ export default function App() {
         return <Profile {...content} key={index} />;
       })}
       <section className="my-14 text-sm">
-        <h3 className="mb-6 dark:text-white">Contact</h3>
+        <h3 className="mb-6 dark:text-white text-[1rem]">Contact</h3>
         <div className="flex flex-col gap-6">
           {bioData.contacts.map((contact, index) => {
             return (
               <div className="flex" key={index}>
-                <div className="mr-8 w-full max-w-[100px] text-slate-400 dark:text-slate-400">
+                <div className="mr-8 w-full max-w-[100px] text-slate-600 dark:text-slate-400">
                   {contact.label}
                 </div>
                 <div className="flex flex-1 flex-col text-slate-900 dark:text-slate-100">

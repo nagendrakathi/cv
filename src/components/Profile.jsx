@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Profile({ title, items }) {
   return (
     <section className="my-14 text-sm">
@@ -8,7 +6,7 @@ export default function Profile({ title, items }) {
         {items.map((item, index) => {
           return (
             <div className="flex" key={index}>
-              <div className="mr-8 w-full max-w-[100px] dark:text-slate-400">
+              <div className="mr-8 w-full max-w-[100px] dark:text-white/50">
                 {item.date}
               </div>
               <div className="flex flex-1 flex-col">

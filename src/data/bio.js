@@ -3,6 +3,7 @@ export const bioData = {
   avatar: "https://github.com/andreypopp.png",
   jobTitle: "Full Stack Developer",
   website: "",
+  email:"nagendrakathi7@gmail.com",
   about:
     "I am a Full Stack Developer ☂️ who recently graduated. I work with the MERN stack and bring energy and passion to creating useful, practical projects that make a real difference.",
   contacts: [

@@ -1,6 +1,3 @@
-import { Image } from "lucide-react";
-import React from "react";
-import { Link } from "react-router-dom";
 import ModeToggle from "./ModeToggle";
 export default function Bio({ bio }) {
   return (
@@ -17,9 +14,35 @@ export default function Bio({ bio }) {
         <p className="text-muted-foreground text-sm">{bio.jobTitle}</p>
         {bio.website ? (
           <span className="text-muted-foreground bg-gray-400/30 rounded-full px-2 py-1 text-xs cursor-pointer">
-            <a href={bio.website} target="_blank" rel="noopener noreferrer" className=""/>
-              {bio.website.replace(/(^\w+:|^)\/\//, "").replace("www.", "")}
+            <a
+              href={bio.website}
+              target="_blank"
+              rel="noopener noreferrer"
+              className=""
+            />
+            {bio.website.replace(/(^\w+:|^)\/\//, "").replace("www.", "")}
           </span>
+        ) : null}
+        {bio.email ? (
+          <div className="flex items-center mt-1">
+            <a
+              href={`mailto:${bio.email}`}
+              className="text-muted-foreground text-sm"
+            >
+              React out
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="100"
+                height="100"
+                viewBox="0 0 50 50"
+                className="inline-block ml-1 size-3 fill-[#a1a1aa] text-slate-900 dark:text-slate-100"
+              >
+                <path d="M 0 7 L 0 43 L 50 43 L 50 7 Z M 2 9 L 48 9 L 48 11.5 C 47.609375 11.839844 30.074219 27.136719 28.4375 28.5625 L 28.34375 28.65625 C 27.046875 29.785156 25.71875 30 25 30 C 24.285156 30 22.953125 29.785156 21.65625 28.65625 C 21.285156 28.332031 18.613281 26.023438 16.6875 24.34375 C 10.972656 19.359375 2.292969 11.757813 2 11.5 Z M 2 14.15625 C 3.734375 15.667969 9.886719 21.023438 15.125 25.59375 L 2 35.96875 Z M 48 14.15625 L 48 35.96875 L 34.875 25.59375 C 40.113281 21.023438 46.265625 15.667969 48 14.15625 Z M 16.65625 26.9375 C 17.871094 27.996094 20.066406 29.914063 20.34375 30.15625 L 20.375 30.1875 C 22.066406 31.640625 23.863281 32 25 32 C 26.144531 32 27.957031 31.636719 29.65625 30.15625 C 29.9375 29.914063 32.148438 28.007813 33.375 26.9375 L 48 38.5 L 48 41 L 2 41 L 2 38.5 Z"></path>
+              </svg>
+            </a>
+          </div>
         ) : null}
       </div>
       <ModeToggle />

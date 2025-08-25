@@ -6,7 +6,7 @@ import { profileData } from "./data/profile";
 import Profile from "./components/Profile";
 export default function App() {
   return (
-    <main className="relative mx-auto min-h-screen max-w-xl px-6 py-20 font-light">
+    <>
       <Bio bio={bioData} />
       <section className="my-9 text-sm">
         <h3 className="mb-1 dark:text-white">About</h3>
@@ -20,7 +20,7 @@ export default function App() {
           {bioData.skills.map((skill, index) => (
             <span
               key={index}
-              className="rounded-full bg-slate-200 px-3 py-1 text-xs text-slate-500 dark:bg-slate-800 dark:text-slate-200 cursor-pointer hover:-translate-y-0.5"
+              className="rounded-full bg-slate-200 px-3 py-1 mb-1 text-xs text-slate-500 dark:bg-slate-800 dark:text-slate-200 cursor-pointer hover:-translate-y-0.5"
             >
               {skill}
             </span>
@@ -66,6 +66,6 @@ export default function App() {
           })}
         </div>
       </section>
-    </main>
+    </>
   );
 }

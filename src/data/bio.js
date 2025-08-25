@@ -29,6 +29,5 @@ export const bioData = {
     "HTML",
     "CSS",
     "Tailwind CSS",
-    "Git",
   ]
 };

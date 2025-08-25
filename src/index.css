@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+@import "tailwindcss";
+
+body{
+    font-family: 'geist', sans-serif;
+    background-color: hsl(0, 0%, 93%);
+}
+
+@layer base{
+    :root{
+        --muted-foreground:hsl( 240, 5%, 64.9%);
+    }
+     .dark {
+    --muted-foreground:hsl( 240, 5%, 64.9%);
+  }
+}
+.dark body{
+    background-color: hsl(0, 0%, 9%);
+}
+.text-muted-foreground{
+    color:var(--muted-foreground);
+}
+
+@custom-variant dark (&:where(.dark, .dark *));

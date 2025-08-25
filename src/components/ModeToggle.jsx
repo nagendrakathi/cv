@@ -30,8 +30,7 @@ export default function ThemeToggle() {
     }
   };
 
-  if (!mounted) return null; // prevent hydration mismatch
-
+  if (!mounted) return null;
   return (
     <button
       onClick={toggleTheme}

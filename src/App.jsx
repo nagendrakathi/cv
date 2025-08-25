@@ -1,5 +1,3 @@
-import { Sun } from "lucide-react";
-import React from "react";
 import Bio from "./components/Bio";
 import { bioData } from "./data/bio";
 import { profileData } from "./data/profile";

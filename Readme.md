@@ -1,6 +1,6 @@
 # CV Repository
 
-Welcome! This repository helps you create your own CV by filling in your details.
+Welcome! This repository helps you create your own CV by filling in your details in data folder.
 
 ## Steps to Get Started
 
@@ -8,14 +8,13 @@ Welcome! This repository helps you create your own CV by filling in your details
     Click the "Fork" button at the top-right corner to create your own copy of this repository.
 
 2. **Fill in Your Details**  
-    Navigate to the `data` folder and update the files with your personal information. Ensure all fields are completed appropriately.
+    Navigate to the `data` folder and update the files with your personal information.
 
 3. **Generate Your CV**  
-    Follow the instructions in the repository to generate your CV.
+    Run the project.
 
 ## Notes
 
 - Double-check your details for accuracy.
-- Refer to the documentation for any additional customization options.
 
 Happy CV building!
